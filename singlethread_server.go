@@ -1,13 +1,11 @@
 // Single-threaded server application using ZeroMQ
+// Receive a string from a client, reverse it and sent it back
 package main
 
 import (
   zmq "github.com/pebbe/zmq4"
   "log"
 )
-
-// Number of workers to start
-const max_workers int32 = 5
 
 // Connection to bind 
 const client_bind string = "tcp://*:5555"
